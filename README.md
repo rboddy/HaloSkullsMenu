@@ -1,1 +1,1 @@
-I am recreating the Skulls UI that @pixelflaregfx created. He is a super talented VFX artist and deserves all the credit for the design of this gorgeous UI.
+I am recreating the Skulls UI that @pixelflaregfx created. He is a super talented VFX artist and deserves all the credit for the design of this gorgeous UI. Find his original tweet of this UI here: https://twitter.com/pixelflaregfx/status/1139326470600495104
