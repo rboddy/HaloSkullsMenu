@@ -18,11 +18,47 @@ body {
 }
 
 .navList li {
-  color: grey;
   display: inline;
+  margin-left: 5px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: grey;
 }
 
 .navList .selected {
   color: white;
+}
+
+.mainContent {
+  width: 65%;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.mainContent .skulls {
+  background-color: red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+}
+
+.mainContent .skulls .goldSkulls {
+  background-color: gold;
+}
+
+.mainContent .skulls .silverSkulls {
+  background-color: silver;
+}
+
+.mainContent .details {
+  background-color: orange;
 }
 /*# sourceMappingURL=main.css.map */
