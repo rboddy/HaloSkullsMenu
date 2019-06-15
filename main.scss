@@ -50,20 +50,22 @@ body {
       grid-row-gap: 20px;
       padding-bottom: 20px;
       border-bottom: 2px solid white;
-      div {
-        border: 1px solid gray;
-        width: 150px;
-        height: 150px;
-      }
     }
     .silverSkulls {
       display: grid;
       grid-template-columns: repeat(5, 150px);
       grid-column-gap: 3px;
-      div {
-        border: 1px solid gray;
-        width: 150px;
-        height: 150px;
+    }
+    .skullBox {
+      border: 1px solid gray;
+      width: 150px;
+      height: 150px;
+      img {
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
       }
     }
   }

@@ -61,12 +61,6 @@ body {
   border-bottom: 2px solid white;
 }
 
-.mainContent .skulls .goldSkulls div {
-  border: 1px solid gray;
-  width: 150px;
-  height: 150px;
-}
-
 .mainContent .skulls .silverSkulls {
   display: -ms-grid;
   display: grid;
@@ -75,9 +69,17 @@ body {
   grid-column-gap: 3px;
 }
 
-.mainContent .skulls .silverSkulls div {
+.mainContent .skulls .skullBox {
   border: 1px solid gray;
   width: 150px;
   height: 150px;
+}
+
+.mainContent .skulls .skullBox img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=main.css.map */
