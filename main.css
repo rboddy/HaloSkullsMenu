@@ -33,32 +33,51 @@ body {
 
 .mainContent {
   width: 65%;
-  height: 600px;
+  height: 500px;
   margin: 0 auto;
   margin-top: 120px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 765px 380px;
+      grid-template-columns: 765px 380px;
 }
 
 .mainContent .skulls {
-  background-color: red;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 2fr 1fr;
       grid-template-rows: 2fr 1fr;
+  grid-row-gap: 20px;
 }
 
 .mainContent .skulls .goldSkulls {
-  background-color: gold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[5];
+      grid-template-columns: repeat(5, 150px);
+  grid-column-gap: 3px;
+  grid-row-gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+
+.mainContent .skulls .goldSkulls div {
+  border: 1px solid gray;
+  width: 150px;
+  height: 150px;
 }
 
 .mainContent .skulls .silverSkulls {
-  background-color: silver;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[5];
+      grid-template-columns: repeat(5, 150px);
+  grid-column-gap: 3px;
 }
 
-.mainContent .details {
-  background-color: orange;
+.mainContent .skulls .silverSkulls div {
+  border: 1px solid gray;
+  width: 150px;
+  height: 150px;
 }
 /*# sourceMappingURL=main.css.map */
