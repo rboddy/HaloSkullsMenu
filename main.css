@@ -40,6 +40,7 @@ body {
   display: grid;
   -ms-grid-columns: 765px 380px;
       grid-template-columns: 765px 380px;
+  grid-column-gap: 30px;
 }
 
 .mainContent .skulls {
@@ -81,5 +82,17 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
+}
+
+.mainContent .details #skullDisplay {
+  width: 100%;
+  background-color: red;
+}
+
+.mainContent .details #skullDisplay img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
