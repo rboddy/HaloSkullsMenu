@@ -100,9 +100,13 @@ function mouseOverSkull(skullImage) {
 }
 
 function clickOnSkull(skullImage, skullItem) {
-  const activeSkull = skullImage.replace('.png">', 'Active.png">');
-  console.log(activeSkull);
-  console.log(skullItem);
-  skullItem.innerHTML = activeSkull;
-  skullDisplay.innerHTML = activeSkull;
+  if (skullImage.includes("Active")) {
+    const resetSkullImage = skullImage.replace("Active", "");
+    skullItem.innerHTML = resetSkullImage;
+    skullDisplay.innerHTML = resetSkullImage;
+  } else {
+    const activeSkull = skullImage.replace('.png">', 'Active.png">');
+    skullItem.innerHTML = activeSkull;
+    skullDisplay.innerHTML = activeSkull;
+  }
 }
