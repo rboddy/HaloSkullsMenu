@@ -84,10 +84,13 @@ const skullMetadata = [
 
 function mouseOverSkull(skullImage) {
   const skullFile = skullImage.replace('<img src="content/SkullImages/', "");
-  const skullName = skullFile.replace('.png">', "");
+  const skullName = skullFile.replace('.png">', "").trim();
+  console.log(skullName);
   const skullInfo = skullMetadata.filter(
-    skull => skull.name.trim().replace(/\s/g, "") === skullName.trim()
+    skull =>
+      skull.name.trim().replace(/\s/g, "") === skullName.replace("Active", "")
   );
+  console.log(skullInfo);
   skullTitle.innerText = skullInfo[0].name;
   skullDesc.innerText = skullInfo[0].desc;
   skullMulti.innerText = `Skull Multiplier: ${skullInfo[0].multiplier}`;
