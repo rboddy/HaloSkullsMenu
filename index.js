@@ -95,8 +95,9 @@ function mouseOverSkull(skullImage) {
   );
   skullTitle.innerText = skullInfo[0].name;
   skullDesc.innerText = skullInfo[0].desc;
-  skullMulti.innerHTML = `<span class="gray">SKULL MULTIPLIER:</span> ${skullInfo[0]
-    .multiplier}`;
+  skullMulti.innerHTML = `<span class="gray">SKULL MULTIPLIER:</span> ${
+    skullInfo[0].multiplier
+  }`;
 
   skullDisplay.innerHTML = skullImage;
   skullDetails.style.visibility = "visible";

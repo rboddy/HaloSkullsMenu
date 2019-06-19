@@ -46,16 +46,16 @@ body img {
   margin-top: 120px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1.1fr;
-      grid-template-columns: 2fr 1.1fr;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
   grid-column-gap: 5.5rem;
 }
 
 .mainContent .skulls .goldSkulls {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-columns: (150px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 150px);
   grid-column-gap: 3px;
   grid-row-gap: 20px;
   padding-bottom: 30px;
@@ -65,8 +65,8 @@ body img {
 .mainContent .skulls .silverSkulls {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-columns: (150px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 150px);
   grid-column-gap: 3px;
   margin-top: 30px;
 }
@@ -103,6 +103,13 @@ body img {
 .mainContent #details #skullTitle {
   text-shadow: 0 0 10px #1973c5;
   letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+.mainContent #details .headerUnderline {
+  border: 0;
+  height: 1px;
+  background: rgba(128, 128, 128, 0.1);
 }
 
 .mainContent #details .animated {
@@ -138,6 +145,7 @@ body img {
   font-size: 1rem;
   letter-spacing: 2px;
   margin-top: 0;
+  padding-bottom: 30px;
 }
 
 .mainContent #details #skullMulti {
