@@ -75,7 +75,7 @@ const skullMetadata = [
     multiplier: "x1.0"
   },
   {
-    name: "Grunt Birthday Party",
+    name: "Grunt Birthday",
     desc: "Headshot a Grunt - HAPPY BOOM TIME!",
     multiplier: "x1.0"
   },
@@ -95,12 +95,12 @@ function mouseOverSkull(skullImage) {
   );
   skullTitle.innerText = skullInfo[0].name;
   skullDesc.innerText = skullInfo[0].desc;
-  skullMulti.innerHTML = `<span class="gray">Skull Multiplier:</span> ${
+  skullMulti.innerHTML = `<span class="gray">SKULL MULTIPLIER:</span> ${
     skullInfo[0].multiplier
   }`;
 
   skullDisplay.innerHTML = skullImage;
-  skullDetails.style.display = "block";
+  skullDetails.style.visibility = "visible";
 }
 
 function clickOnSkull(skullImage, skullItem) {
