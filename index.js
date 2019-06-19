@@ -14,6 +14,10 @@ for (var i = 0; i < skullBox.length; i++) {
   });
 }
 
+skullTitle.addEventListener("animationend", () => {
+  skullTitle.classList.remove("animated");
+});
+
 const skullMetadata = [
   {
     name: "Black Eye",
@@ -91,7 +95,9 @@ function mouseOverSkull(skullImage) {
   );
   skullTitle.innerText = skullInfo[0].name;
   skullDesc.innerText = skullInfo[0].desc;
-  skullMulti.innerText = `Skull Multiplier: ${skullInfo[0].multiplier}`;
+  skullMulti.innerHTML = `<span class="gray">Skull Multiplier:</span> ${
+    skullInfo[0].multiplier
+  }`;
 
   skullDisplay.innerHTML = skullImage;
   skullDetails.style.display = "block";
@@ -102,9 +108,11 @@ function clickOnSkull(skullImage, skullItem) {
     const resetSkullImage = skullImage.replace("Active", "");
     skullItem.innerHTML = resetSkullImage;
     skullDisplay.innerHTML = resetSkullImage;
+    skullTitle.classList.add("animated");
   } else {
     const activeSkull = skullImage.replace('.png">', 'Active.png">');
     skullItem.innerHTML = activeSkull;
     skullDisplay.innerHTML = activeSkull;
+    skullTitle.classList.add("animated");
   }
 }
