@@ -156,7 +156,35 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .mainContent {
+    display: block;
+    margin-top: 50px;
+  }
+  #skullDisplay {
+    margin-top: 40px;
+    height: auto;
+  }
+  #details {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .mainContent {
+    display: block;
+    margin-top: 50px;
+  }
+  #skullDisplay {
+    margin-top: 40px;
+    height: auto;
+  }
+  #details {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .mainContent {
     display: block;
     margin-top: 50px;
