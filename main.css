@@ -25,6 +25,15 @@ body img {
   border-bottom: 1px solid grey;
 }
 
+.loader {
+  width: 100%;
+  text-align: center;
+}
+
+.loader h1 {
+  text-shadow: 0 0 10px #1973c5;
+}
+
 .navList {
   list-style: none;
   margin-left: 10%;

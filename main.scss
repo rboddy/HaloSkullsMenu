@@ -23,6 +23,14 @@ body {
   border-bottom: 1px solid grey;
 }
 
+.loader {
+  width: 100%;
+  text-align: center;
+  h1 {
+    text-shadow: 0 0 10px $blueColor;
+  }
+}
+
 .navList {
   list-style: none;
   margin-left: 10%;

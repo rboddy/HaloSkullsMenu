@@ -40,7 +40,7 @@ const skullDetails = document.getElementById("details");
       srcList.push(images[i].src.replace(".png", "Active.png"));
     }
     loadImages(srcList, function() {
-      console.log(srcList);
+      document.getElementById("loader").style.display = "none";
       document.getElementById("mainContent").style.display = "grid";
     });
   });
