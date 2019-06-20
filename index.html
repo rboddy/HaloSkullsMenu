@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald:400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
-    <title>Halo Skulls</title>
-  </head>
 
-  <body>
-    <div class="topSpacer"></div>
-    <div class="navLinks">
-      <ul class="navList">
-        <li><a href="/">Campaign</a></li>
-        <li class="selected">
-          <a href="/"><span class="selected">Skulls</span></a>
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Halo Skulls</title>
+</head>
+
+<body>
+  <div class="topSpacer"></div>
+  <div class="navLinks">
+    <ul class="navList">
+      <li><a href="/">Campaign</a></li>
+      <li class="selected">
+        <a href="/"><span class="selected">Skulls</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="mainContent" id="mainContent">
+    <div class="skulls">
+      <div class="goldSkulls">
+        <div class="skullBox">
+          <img src="content/SkullImages/BlackEye.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Blind.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Catch.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Famine.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Fog.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Iron.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Mythic.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Thunderstorm.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/Tilt.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/ToughLuck.png" />
+        </div>
+      </div>
+      <div class="silverSkulls">
+        <div class="skullBox">
+          <img src="content/SkullImages/Cowbell.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/GruntBirthday.png" />
+        </div>
+        <div class="skullBox">
+          <img src="content/SkullImages/IWHBYD.png" />
+        </div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-    <div class="mainContent">
-      <div class="skulls">
-        <div class="goldSkulls">
-          <div class="skullBox">
-            <img src="content/SkullImages/BlackEye.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Blind.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Catch.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Famine.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Fog.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Iron.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Mythic.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Thunderstorm.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/Tilt.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/ToughLuck.png" />
-          </div>
-        </div>
-        <div class="silverSkulls">
-          <div class="skullBox">
-            <img src="content/SkullImages/Cowbell.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/GruntBirthday.png" />
-          </div>
-          <div class="skullBox">
-            <img src="content/SkullImages/IWHBYD.png" />
-          </div>
-          <div></div>
-          <div></div>
-        </div>
+    <div id="details">
+      <div id="skullDisplay"></div>
+      <div id="skullData">
+        <h1 id="skullTitle"></h1>
+        <hr class="headerUnderline" />
+        <p id="skullDesc"></p>
+        <hr />
+        <p id="skullMulti"></p>
       </div>
-      <div id="details">
-        <div id="skullDisplay"></div>
-        <div id="skullData">
-          <h1 id="skullTitle"></h1>
-          <hr class="headerUnderline" />
-          <p id="skullDesc"></p>
-          <hr />
-          <p id="skullMulti"></p>
-        </div>
-      </div>
-      <footer class="footer">
-        All credit for the design of this UI goes to
-        <a href="https://twitter.com/pixelflaregfx" target="_blank"
-          >PixelFlareGFX</a
+    </div>
+    <footer class="footer">
+      All credit for the design of this UI goes to
+      <a href="https://twitter.com/pixelflaregfx" target="_blank">PixelFlareGFX</a
         >! Coded by
         <a href="https://twitter.com/imryanboddy" target="_blank">This guy.</a>
-      </footer>
-    </div>
-    <script src="index.js"></script>
-  </body>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>

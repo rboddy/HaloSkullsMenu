@@ -49,8 +49,7 @@ body img {
   height: 500px;
   margin: 0 auto;
   margin-top: 120px;
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   grid-column-gap: 5.5rem;

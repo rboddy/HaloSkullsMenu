@@ -5,6 +5,44 @@ const skullDesc = document.getElementById("skullDesc");
 const skullMulti = document.getElementById("skullMulti");
 const skullDetails = document.getElementById("details");
 
+(function() {
+  function loadImages(images, callback) {
+    var total = images.length,
+      count = 0,
+      i;
+
+    function check(n) {
+      if (n == total) {
+        callback();
+      }
+    }
+
+    for (i = 0; i < total; ++i) {
+      var src = images[i];
+      var img = document.createElement("img");
+      img.src = src;
+
+      img.addEventListener("load", function() {
+        if (this.complete) {
+          count++;
+          check(count);
+        }
+      });
+    }
+  }
+
+  window.addEventListener("load", function() {
+    var images = document.getElementsByTagName("img");
+    var srcList = [];
+    for (var i = 0; i < images.length; i++) {
+      srcList.push(images[i].src);
+    }
+    loadImages(srcList, function() {
+      document.getElementById("mainContent").style.display = "grid";
+    });
+  });
+})();
+
 for (var i = 0; i < skullBox.length; i++) {
   skullBox[i].addEventListener("mouseenter", () => {
     mouseOverSkull(event.target.innerHTML);
@@ -95,9 +133,8 @@ function mouseOverSkull(skullImage) {
   );
   skullTitle.innerText = skullInfo[0].name;
   skullDesc.innerText = skullInfo[0].desc;
-  skullMulti.innerHTML = `<span class="gray">SKULL MULTIPLIER:</span> ${
-    skullInfo[0].multiplier
-  }`;
+  skullMulti.innerHTML = `<span class="gray">SKULL MULTIPLIER:</span> ${skullInfo[0]
+    .multiplier}`;
 
   skullDisplay.innerHTML = skullImage;
   skullDetails.style.visibility = "visible";
