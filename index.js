@@ -5,6 +5,7 @@ const skullDesc = document.getElementById("skullDesc");
 const skullMulti = document.getElementById("skullMulti");
 const skullDetails = document.getElementById("details");
 
+//this is an image preloader I got from https://codepen.io/gabrieleromanato/pen/pvaKr
 (function() {
   function loadImages(images, callback) {
     var total = images.length,
@@ -36,8 +37,10 @@ const skullDetails = document.getElementById("details");
     var srcList = [];
     for (var i = 0; i < images.length; i++) {
       srcList.push(images[i].src);
+      srcList.push(images[i].src.replace(".png", "Active.png"));
     }
     loadImages(srcList, function() {
+      console.log(srcList);
       document.getElementById("mainContent").style.display = "grid";
     });
   });
